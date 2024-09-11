@@ -1,5 +1,41 @@
-$mycolor: #adadad;
+@use 'icons';
+
+$bg1: #ffffff;
+$bg2: #f4f6fb;
+
+@mixin base {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexcol {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
-    background-color: $mycolor;
+    @include base;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    @include flexrow;
+    @include base;
+}
+
+.sidebar {
+    @include flexcol;
+    background-color: $bg1;
+    width: 25%;
+}
+
+.main {
+    background-color: $bg2;
+    width: 90%;
 }
