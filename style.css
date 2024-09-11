@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+.menuitem:hover {
+  color: #fe7b51;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -64,6 +68,10 @@
 }
 
 .logout {
+  color: #ed2626;
+}
+
+.lgt:hover {
   color: #ed2626;
 }
 

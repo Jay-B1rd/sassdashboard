@@ -18,6 +18,10 @@
     padding: 0;
 }
 
+.menuitem:hover {
+    color: vars.$accent; 
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -53,6 +57,10 @@
 }
 
 .logout {
+    color: vars.$logout;
+}
+
+.lgt:hover {
     color: vars.$logout;
 }
 
