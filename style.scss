@@ -1,9 +1,7 @@
 @use 'icons';
 @use 'sidebar';
 @use 'mixins';
-
-$bg1: #ffffff;
-$bg2: #f4f6fb;
+@use 'vars';
 
 body {
     @include mixins.base;
@@ -17,18 +15,8 @@ body {
     height: 100vh;
 }
 
-.sidebar {
-    @include mixins.flexcol;
-    background-color: $bg1;
-    width: 18%;
-    padding: 20px;
-    font-size: 15px;
-    height: 100vh;
-    block-size: fit-content;
-}
-
 .main {
-    background-color: $bg2;
+    background-color: vars.$bg2;
     width: 90%;
     height: fit-content;
     block-size: fit-content;
