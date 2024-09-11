@@ -1,0 +1,42 @@
+@use 'mixins';
+@use 'vars';
+
+.searchbar {
+    border-width: 1px;
+    border-style: solid;
+    border-color: vars.$fade;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: vars.$fade;
+    display: flex;
+    align-items: center;
+    background-color: vars.$bg1;
+}
+
+.ad {
+    width: 100%;
+    height: 30%;
+    background-color: vars.$accent;
+    border-radius: 20px;
+    color: vars.$bg1;
+}
+
+.adtext {
+    padding: 30px;
+    width: 70%;
+    @include mixins.flexcol;
+}
+
+.adtitle {
+    font-size: 30px;
+}
+
+.joinnow {
+    display: flex;
+    align-items: center;
+    background: black;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px 20px;
+}
