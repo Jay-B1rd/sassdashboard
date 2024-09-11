@@ -5,9 +5,10 @@
     @include mixins.flexcol;
     background-color: vars.$bg1;
     width: 18%;
-    padding: 20px;
+    padding: 0 20px;
     font-size: 15px;
     height: 100vh;
+    margin: 0;
 }
 
 .menuitem {
@@ -19,19 +20,26 @@
 
 .logo {
     display: flex;
+    align-items: center;
+    margin: 20px auto 50px;
+    font-size: 24px;
+    flex-grow: 1;
 }
 
 .overview {
     @include mixins.flexcol;
+    flex-grow: 1;
 }
 
 .friends {
     @include mixins.flexcol;
+    flex-grow: 1;
 }
 
 .settings {
     @include mixins.flexcol;
-    align-content: end;
+    justify-content: end;
+    flex-grow: 5;
 }
 
 .menuitem {
@@ -39,10 +47,25 @@
 }
 
 .sidetitle {
-    color: vars.$sidetitle;
+    color: vars.$fade;
     font-size: 12px;
 }
 
 .logout {
-    color: red;
+    color: vars.$logout;
+}
+
+.logoicon {
+    height: 60px;
+}
+
+.menufriend {
+    @include mixins.flexcol;
+}
+
+.friendtitle {
+    font-size: 12px;
+    color: vars.$fade;
+    margin: 0;
+    padding: 0;
 }
