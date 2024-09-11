@@ -1,0 +1,33 @@
+@use 'mixins';
+
+.menuitem {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    flex-grow: 1
+}
+
+.overview {
+    @include mixins.flexcol;
+    flex-grow: 3;
+}
+
+.friends {
+    @include mixins.flexcol;
+    flex-grow: 3;
+}
+
+.settings {
+    @include mixins.flexcol;
+    flex-grow: 2;
+    align-content: end;
+}
+
+.menuitem {
+    margin: 10px 0;
+}
