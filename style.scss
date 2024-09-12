@@ -3,6 +3,7 @@
 @use 'mixins';
 @use 'vars';
 @use 'center';
+@use 'stats';
 
 body {
     @include mixins.base;
