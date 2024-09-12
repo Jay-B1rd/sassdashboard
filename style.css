@@ -269,6 +269,41 @@ td {
   color: #b9c8fe;
 }
 
+.notifications {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.notifications *:hover {
+  color: #fe7b51;
+}
+
+.nicon {
+  background-color: white;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.nuser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nname {
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.statdisplay {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  width: 95%;
+}
+
 body {
   margin: 0;
   padding: 0;

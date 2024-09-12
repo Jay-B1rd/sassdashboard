@@ -1,2 +1,35 @@
 @use 'mixins';
 @use 'vars';
+
+.notifications {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @include mixins.flexrow;
+    *:hover {
+        color: vars.$accent;
+    }
+}
+
+.nicon {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.nuser {
+    @include mixins.flexrow;
+    align-items: center;
+}
+
+.nname {
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+.statdisplay {
+    background-color: vars.$bg1;
+    border-radius: 20px;
+    padding: 15px;
+    width: 95%;
+}
