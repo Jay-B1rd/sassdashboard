@@ -82,3 +82,22 @@
 .seeallbadge:hover {
     text-decoration: underline;
 }
+
+.user {
+    @include mixins.flexcol;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.usericon {
+    width: 35%; 
+    align-self: center;
+    background-color: vars.$bg2;
+    border-radius: 100%;
+}
+
+.rmap {
+    width: 100%;
+    border-radius: 20px;
+}
