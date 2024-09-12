@@ -133,6 +133,16 @@
   padding: 10px 20px;
 }
 
+.vids {
+  display: flex;
+  flex-direction: row;
+}
+
+.videobadge {
+  display: flex;
+  flex-direction: row;
+}
+
 body {
   margin: 0;
   padding: 0;
