@@ -4,11 +4,12 @@
 .sidebar {
     @include mixins.flexcol;
     background-color: vars.$bg1;
-    width: 18%;
+    width: 15%;
     padding: 0 20px;
     font-size: 15px;
     height: 100vh;
     margin: 0;
+    position: fixed;
 }
 
 .menuitem {
